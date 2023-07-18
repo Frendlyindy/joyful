@@ -1,0 +1,26 @@
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  text-align: center;
+}
+.home-imgs img {
+  width: 400px;
+  height: 250px;
+}
+.home-imgs {
+  display: flex;
+  margin: 2rem;
+}
+#momAndDaughter {
+  width: 500px;
+}
+
+h2 {
+  text-align: center;
+}
+p {
+  font-size: x-large;
+}

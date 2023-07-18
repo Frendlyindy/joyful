@@ -1,0 +1,16 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+}
+
+h3 {
+  color: #007bff;
+}
+
+p {
+  font-size: x-large;
+  line-height: 1.6;
+  color: #333; /* You can change this to your preferred text color */
+  margin: 0 0 10px; /* Adjust the margin as per your layout needs */
+}

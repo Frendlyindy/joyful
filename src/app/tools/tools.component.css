@@ -1,0 +1,5 @@
+.tool-image {
+  height: 150px; /* Set the desired height for your images */
+  width: 100%; /* Maintain the aspect ratio of the images */
+  object-fit: cover; /* Prevent image distortion */
+}

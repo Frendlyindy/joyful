@@ -1,4 +1,40 @@
-<h2 style="text-align: center;">Welcome to Joyful Journeys!</h2>
-<p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum a cupiditate labore, eius
-  autem nostrum eveniet ullam
-  sunt, saepe sapiente quidem dolorem eos quasi facere molestiae? Saepe expedita excepturi quisquam.</p>
+<h2>Welcome to Joyful Journeys!</h2>
+<div class="home-imgs">
+  <img id="momAndDaughter"
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ0SMvPNg-x9Yu5CDwLPVZaDpkgiPRin-BtQ&usqp=CAU"
+    alt="mom and daughter walking">
+  <img src="https://images.pexels.com/photos/8923155/pexels-photo-8923155.jpeg" alt="mom and son reading">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9XNCv97g_t05GUGYRchNQX5Sf6iMsI2Y7VQ&usqp=CAU"
+    alt="grandmother and grandson reading">
+</div>
+<ng-container *ngIf="isLoggedIn; else notLoggedInBlock" class="center-block">
+  <div>
+  </div>
+  <p>A Joyful Journey is a year long thematic curriculum. We choose a theme each year that
+    we
+    feel will be fun and exciting for our children and for us. Sometimes the idea comes from a favorite movie or book.
+    Sometimes the idea comes from a subject we really want to study. Sometimes the idea comes from a Core value we
+    really
+    want to teach. Every year is different, exciting and tailored to the needs of our families at that specific time.
+    Joyful Journeys are exciting adventures that we go on every year as we homeschool our children.</p>
+  <p>Welcome! Thank you for being one our first users! Stay tuned for new content being added regularly. </p>
+  <button (click)="logout()" class="btn btn-primary">Logout</button>
+  <!-- <button (click)="editUser()" class="btn btn-warning">Edit</button> -->
+  <button (click)="deleteUser()" class="btn btn-danger">Delete</button>
+</ng-container>
+
+<ng-template #notLoggedInBlock>
+  <div>
+
+  </div>
+  <p>A Joyful Journey is a year long thematic curriculum. We choose a theme each year that
+    we
+    feel will be fun and exciting for our children and for us. Sometimes the idea comes from a favorite movie or book.
+    Sometimes the idea comes from a subject we really want to study. Sometimes the idea comes from a Core value we
+    really
+    want to teach. Every year is different, exciting and tailored to the needs of our families at that specific time.
+    Joyful Journeys are exciting adventures that we go on every year as we homeschool our children.</p>
+  <p>Please log in to access extra content.</p>
+  <button (click)="redirectToLogin()" class="btn btn-primary">Login</button>
+  <button (click)="newUser()" class="btn btn-success">Sign Up</button>
+</ng-template>
